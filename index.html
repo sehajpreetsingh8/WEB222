@@ -1,0 +1,119 @@
+<!-- Name-Sehajpreet Singh ID- 124314204 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html"><i class="fa fa-home" id="home" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="dropdown">
+          <i class="material-icons" id="menu">list</i>
+          <div class="dropdown-content">
+            <a class="men" href="#">Men</a>
+            <a class="women" href="#">Women</a>
+          </div>
+        </div>
+
+        <div>
+          <i class="material-icons" id="sign-in">
+            account_circle
+          </i>
+        </div>
+
+        <div id="search">
+          <textarea name="type here" cols="30" rows="2" placeholder="search here">Clothes</textarea>
+          <i class="material-icons" id="search-icon">
+            search
+          </i>
+        </div>
+
+        <div>
+          <i class="material-icons" id="cart">
+            add_shopping_cart
+          </i>
+        </div>
+
+        <div><a id="contact" href="contact.html">Contact Us</a></div>
+      </nav>
+      <img src="images/logo.png" alt="logo" />
+      <h1>London Britches</h1>
+    </header>
+    <div id="short-des">
+      <p>
+        We are a family of brands, driven by our desire to make great design available to everyone
+        in a sustainable way.
+      </p>
+    </div>
+    <main class="main">
+      <div><img id="mainMen" src="images/jacket3.jpg" alt="mens" /></div>
+      <div><img id="mainWomen" src="images/tee5.jpg" alt="women" /></div>
+    </main>
+    <div id="content">
+      <div id="Men" class="wrapper"></div>
+      <div id="Women" class="wrapper"></div>
+    </div>
+    <footer>
+      <main>
+        <div>&copy;Sehajpreet Singh</div>
+        <div>London Britches</div>
+        <div>
+          <a href="https://www.facebook.com/"
+            ><i class="fa fa-facebook-official" aria-hidden="true"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
+          <a href="https://twitter.com/"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com/"
+            ><i class="fa fa-youtube-square" aria-hidden="true"></i
+          ></a>
+        </div>
+      </main>
+      <form action="https://formspree.io/f/xqkgykbk" method="POST">
+        <label for="eMail">Your email:</label>
+        <input id="eMail" type="text" name="_replyto" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </footer>
+    <script src="script.js"></script>
+    <script src="utils.js"></script>
+    <script>
+      let mainSelector = document.querySelector('.main');
+      let menSelector = document.querySelector('.men');
+      menSelector.onclick = function() {
+        document.querySelector('.wrapper').innerHTML = '';
+        mainSelector.style.display = 'none';
+        util.displayMenALL(window.products);
+      };
+
+      let womenSelector = document.querySelector('.women');
+      womenSelector.onclick = function() {
+        document.querySelector('.wrapper').innerHTML = '';
+        mainSelector.style.display = 'none';
+        util.displayWoMenALL(window.products);
+      };
+    </script>
+  </body>
+</html>

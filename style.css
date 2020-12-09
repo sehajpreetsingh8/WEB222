@@ -1,0 +1,314 @@
+/* Name-Sehajpreet Singh
+ID- 124314204 */
+
+nav {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  z-index: 1;
+}
+#home {
+  margin-top: 5px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+#home:hover {
+  color: rgb(214, 210, 210);
+}
+#menu {
+  margin-top: 5px;
+  font-size: 30px;
+}
+#menu:hover {
+  color: rgb(214, 210, 210);
+}
+#sign-in {
+  margin-top: 5px;
+  font-size: 30px;
+}
+
+#sign-in:hover {
+  color: rgb(214, 210, 210);
+}
+#search textarea {
+  margin-top: 5px;
+  position: relative;
+  align-items: center;
+  padding-left: 13px;
+  width: 15em;
+  height: 26px;
+}
+#search i {
+  margin-top: 5px;
+  font-size: 30px;
+  border: 1px solid darkgray;
+  color: darkgray;
+  border-radius: 3px;
+}
+#cart {
+  margin-top: 5px;
+  font-size: 30px;
+}
+#cart:hover {
+  color: rgb(214, 210, 210);
+}
+
+#contact {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  color: white;
+  font-size: 20px;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 2px 6px;
+  margin: 10px 0px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header {
+  margin-top: 5em;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #55dbcb;
+  color: white;
+  width: 100%;
+  z-index: 1;
+  right: 0;
+}
+
+header img {
+  /* border: 2px solid red; */
+  height: 120px;
+  width: 120px;
+  border-radius: 74px;
+  margin-right: 10px;
+}
+header h1 {
+  font-family: 'lobster', cursive;
+  font-size: 60px;
+  width: 600px;
+  color: #ba1200;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+#mainMen {
+  height: 46em;
+  width: 33em;
+}
+#short-des {
+  text-align: center;
+  display: block;
+  font-family: fantasy;
+  color: #39a2ae;
+}
+.wrap {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.wrapper {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.box {
+  padding: 20px;
+  border-radius: 14px;
+  text-align: right;
+  max-width: 200px;
+}
+
+.title {
+  margin: 5px 20px;
+  font-family: 'lobster', cursive;
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+}
+.name {
+  font-family: fantasy;
+}
+.description {
+  margin: 20px 0px;
+  font-family: monospace;
+}
+.price {
+  display: block;
+  margin: 20px 0px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.imgLink {
+  height: 270px;
+  display: flex;
+  position: relative;
+}
+#formContent {
+  /* border: 2px solid red; */
+  max-width: 600px;
+  min-width: 400px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-family: 'Pragati Narrow', sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #dd1c1a;
+  border-radius: 4px;
+}
+#mainForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 5px;
+}
+
+#sub {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 5em;
+  border: 2px solid #cba328;
+  background-color: #cba328;
+}
+#options {
+  /* border: 2px solid red; */
+  max-width: 200px;
+  margin: 3em 0em;
+}
+
+#msge {
+  display: grid;
+  /* border: 2px solid red; */
+  max-width: 200px;
+  margin: 3em 0em;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+footer main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+footer main div {
+  margin: 20px;
+}
+footer main a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+footer main a:hover {
+  color: rgb(214, 210, 210);
+}
+
+footer form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  margin: auto;
+  padding-right: 50px;
+}
+
+footer form button {
+  background-color: whitesmoke;
+  border: 2px solid whitesmoke;
+  margin-top: 20px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+@media screen and (max-width: 1100px) {
+  #mainMen {
+    height: 26em;
+    width: 23em;
+    margin-left: 20em;
+  }
+  #mainWomen {
+    height: 26em;
+    width: 23em;
+    margin-right: 20em;
+  }
+}
+@media screen and (max-width: 800px) {
+  #mainMen {
+    height: 20em;
+    width: 17em;
+    margin-left: 20em;
+  }
+  #mainWomen {
+    height: 20em;
+    width: 17em;
+    margin-right: 20em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #search textarea {
+    width: 10em;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  #mainMen {
+    height: 16em;
+    width: 13em;
+    margin-left: 20em;
+  }
+  #mainWomen {
+    height: 16em;
+    width: 13em;
+    margin-right: 20em;
+  }
+}
