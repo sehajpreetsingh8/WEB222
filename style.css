@@ -230,7 +230,8 @@ footer {
   justify-content: space-around;
   left: 0;
   right: 0;
-  bottom: 0px;
+  bottom: 0;
+  position: absolute;
   font-size: 20px;
   background-color: black;
   color: white;
